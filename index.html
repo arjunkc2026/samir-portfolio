@@ -3,27 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arjun KC | Frontend Developer</title>
-    <meta name="description" content="Frontend developer specializing in HTML, CSS, and JavaScript. CTO at Prodizy Tech.">
+    <title>Samir Paudel - Founder & CEO | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Custom Cursor -->
-    <div class="cursor"></div>
-    <div class="cursor-follower"></div>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    </div>
+
+    <!-- Grain Overlay -->
+    <div class="grain-overlay"></div>
 
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo">AK</div>
-            <div class="nav-menu">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#skills" class="nav-link">Skills</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#experience" class="nav-link">Experience</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
             <div class="hamburger">
                 <span></span>
                 <span></span>
@@ -34,441 +40,98 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-    <canvas id="particleCanvas"></canvas>
-    <div class="container">
-        <div class="hero-layout">
-            <div class="hero-image-wrapper">
-                <div class="hero-image">
-                    <img src="images/profile.jpeg" alt="Arjun KC">
+        <div class="hero-content">
+            <div class="profile-wrapper">
+                <div class="profile-image-container">
+                    <div class="profile-ring"></div>
+                    <div class="profile-ring-2"></div>
+                    <img src="images/samir.jpeg" alt="Samir Paudel" class="profile-image">
                 </div>
-                <div class="hero-social-links">
-                    <a href="https://github.com/arjunkc2026" class="hero-social-link" aria-label="GitHub">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                        </svg>
-                    </a>
-                    <a href="#" class="hero-social-link" aria-label="LinkedIn">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                            <rect x="2" y="9" width="4" height="12"></rect>
-                            <circle cx="4" cy="4" r="2"></circle>
-                        </svg>
-                    </a>
-                    <a href="#" class="hero-social-link" aria-label="Twitter">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
-                        </svg>
-                    </a>
-                    <a href="#" class="hero-social-link" aria-label="Email">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                            <polyline points="22,6 12,13 2,6"></polyline>
-                        </svg>
-                    </a>
+                <div class="status-badge">
+                    <span class="status-dot"></span>
+                    Available for projects
                 </div>
             </div>
+            
             <div class="hero-text">
-                <h1 class="hero-title">ARJUN KC</h1>
-                <div class="hero-position">
-                    <a href="https://prodizytech.vercel.app/team.html" class="position-btn">Chief Technology Officer at Prodizy Tech</a>
-                </div>
-                <div class="hero-subtitle">
-                    <span class="subtitle-prefix">&gt; </span>
-                    <span class="typed-text"></span>
-                    <span class="cursor-blink">|</span>
-                </div>
-                <p class="hero-intro">Frontend Developer specializing in building robust, scalable solutions using React, Node.js, and cloud technologies. Passionate about creating innovative digital experiences that drive business growth.</p>
-                <div class="hero-cta">
-                    <a href="#contact" class="cta-btn primary">Let's Get Started →</a>
-                </div>
+                <div class="hero-label">Creative Developer & Founder</div>
+                <h1 class="hero-title">
+                    <span class="title-line">Samir Paudel</span>
+                </h1>
+                <p class="hero-subtitle">Transforming ambitious ideas into</p>
+                <p class="hero-subtitle-accent">exceptional digital experiences</p>
             </div>
 
-        </div>
-        
-        <div class="worked-with">
-            <p class="worked-title">Worked with</p>
-            <div class="company-logos">
-                <div class="company-logo">
-                    <span>Prodizy Tech</span>
-                </div>
-                <div class="company-logo">
-                    <span>AWS</span>
-                </div>
-                <div class="company-logo">
-                    <span>MongoDB</span>
-                </div>
-                <div class="company-logo">
-                    <span>React</span>
-                </div>
-                <div class="company-logo">
-                    <span>Node.js</span>
-                </div>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">
+                    <span>Let's Talk</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M4 10H16M16 10L10 4M16 10L10 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </a>
+                <a href="#portfolio" class="btn btn-secondary">
+                    <span>View Work</span>
+                </a>
             </div>
         </div>
-    </div>
-    <div class="floating-shapes">
-        <div class="shape shape-1"></div>
-        <div class="shape shape-2"></div>
-        <div class="shape shape-3"></div>
-        <div class="shape shape-4"></div>
-    </div>
-</section>
+
+        <!-- Decorative Elements -->
+        <div class="hero-decorations">
+            <div class="deco-square deco-1"></div>
+            <div class="deco-square deco-2"></div>
+            <div class="deco-circle deco-3"></div>
+        </div>
+    </section>
+
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
             <div class="section-header">
-                <span class="section-number">01.</span>
+                <span class="section-number">01</span>
                 <h2 class="section-title">About Me</h2>
-                <div class="title-line"></div>
             </div>
+            
             <div class="about-content">
                 <div class="about-text">
-                    <p class="lead-text">Hello! I'm Arjun, a passionate full-stack developer and CTO at Prodizy Tech, where I lead technical innovation and build scalable solutions.</p>
-                    <p>With expertise in modern web technologies, I specialize in creating robust applications using React, Node.js, and cloud infrastructure. My journey in tech has been driven by a love for problem-solving and a commitment to writing clean, efficient code.</p>
-                    <p>I believe in continuous learning and staying ahead of the curve with emerging technologies. When I'm not coding, you'll find me exploring new frameworks, contributing to open-source projects, or mentoring aspiring developers.</p>
-                    <div class="quick-facts">
-                        <div class="fact-item">
-                            <span class="fact-number">5+</span>
-                            <span class="fact-label">Years Experience</span>
-                        </div>
-                        <div class="fact-item">
-                            <span class="fact-number">50+</span>
-                            <span class="fact-label">Projects Completed</span>
-                        </div>
-                        <div class="fact-item">
-                            <span class="fact-number">30+</span>
-                            <span class="fact-label">Happy Clients</span>
-                        </div>
-                    </div>
+                    <p class="lead-text">With over 10 years of experience in web development and digital strategy, I've dedicated my career to helping businesses establish and grow their online presence.</p>
+                    <p>As the Founder and CEO of Prodizy Tech, I lead a talented team in delivering cutting-edge digital solutions. My passion lies in understanding unique business challenges and crafting tailored strategies that drive measurable results.</p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-number">02.</span>
-                <h2 class="section-title">Skills & Expertise</h2>
-                <div class="title-line"></div>
-            </div>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <div class="category-icon">⚡</div>
-                    <h3>Frontend</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span>React.js</span>
-                                <span class="skill-percent">95%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="95"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span>Next.js</span>
-                                <span class="skill-percent">90%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="90"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span>TypeScript</span>
-                                <span class="skill-percent">88%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="88"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span>CSS/Sass</span>
-                                <span class="skill-percent">92%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="92"></div>
-                            </div>
-                        </div>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">100+</div>
+                        <div class="stat-label">Projects Delivered</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Happy Clients</div>
                     </div>
                 </div>
 
-                <div class="skill-category">
-                    <div class="category-icon">🚀</div>
-                    <h3>Backend</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span>Node.js</span>
-                                <span class="skill-percent">93%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="93"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span>Express.js</span>
-                                <span class="skill-percent">91%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="91"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span>Python</span>
-                                <span class="skill-percent">85%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="85"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span>GraphQL</span>
-                                <span class="skill-percent">87%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="87"></div>
-                            </div>
-                        </div>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">💻</div>
+                        <h3>Web Development</h3>
+                        <p>Full-stack expertise in modern frameworks and technologies</p>
                     </div>
-                </div>
-
-                <div class="skill-category">
-                    <div class="category-icon">☁️</div>
-                    <h3>Cloud & DevOps</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span>AWS</span>
-                                <span class="skill-percent">89%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="89"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span>Docker</span>
-                                <span class="skill-percent">86%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="86"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span>Kubernetes</span>
-                                <span class="skill-percent">82%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="82"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span>CI/CD</span>
-                                <span class="skill-percent">88%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="88"></div>
-                            </div>
-                        </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">📊</div>
+                        <h3>Digital Strategy</h3>
+                        <p>Data-driven approaches to online growth and engagement</p>
                     </div>
-                </div>
-
-                <div class="skill-category">
-                    <div class="category-icon">💾</div>
-                    <h3>Database</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span>MongoDB</span>
-                                <span class="skill-percent">90%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="90"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span>PostgreSQL</span>
-                                <span class="skill-percent">87%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="87"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span>Redis</span>
-                                <span class="skill-percent">85%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="85"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span>Firebase</span>
-                                <span class="skill-percent">88%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="88"></div>
-                            </div>
-                        </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">🎯</div>
+                        <h3>Leadership</h3>
+                        <p>Building and mentoring high-performing development teams</p>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-number">03.</span>
-                <h2 class="section-title">Featured Projects</h2>
-                <div class="title-line"></div>
-            </div>
-            <div class="project-filters">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="web">Web Apps</button>
-                <button class="filter-btn" data-filter="mobile">Mobile</button>
-                <button class="filter-btn" data-filter="cloud">Cloud</button>
-            </div>
-            <div class="projects-grid">
-                <div class="project-card" data-category="web">
-                    <div class="project-image">
-                        <div class="image-overlay"></div>
-                        <img src="images/logo.png" alt="" style=" width: 50%; height: 50%; object-fit: contain; ">
-                    </div>
-                    <div class="project-content">
-                        <span class="project-tag">Web Application</span>
-                        <h3>Prodizy Tech Website</h3>
-                        <p>Official website of Prodizy Tech, designed and developed by me to showcase the company’s vision, services, and brand identity.</p>
-                        <div class="project-tech">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://prodizytech.vercel.app/" class="project-link">Live Demo →</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="mobile">
-                    <div class="project-image">
-                        <div class="image-overlay"></div>
-                        <div class="project-icon">📱</div>
-                    </div>
-                    <div class="project-content">
-                        <span class="project-tag">Mobile App</span>
-                        <h3>Fitness Tracker</h3>
-                        <p>Cross-platform mobile app for tracking workouts, nutrition, and health metrics with social features.</p>
-                        <div class="project-tech">
-                            <span>React Native</span>
-                            <span>Firebase</span>
-                            <span>Redux</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">Case Study →</a>
-                            <a href="#" class="project-link">GitHub →</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="cloud">
-                    <div class="project-image">
-                        <div class="image-overlay"></div>
-                        <div class="project-icon">☁️</div>
-                    </div>
-                    <div class="project-content">
-                        <span class="project-tag">Cloud Solution</span>
-                        <h3>Microservices Architecture</h3>
-                        <p>Scalable microservices system deployed on AWS with containerization and orchestration.</p>
-                        <div class="project-tech">
-                            <span>Docker</span>
-                            <span>Kubernetes</span>
-                            <span>AWS</span>
-                            <span>GraphQL</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">Details →</a>
-                            <a href="#" class="project-link">Docs →</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="web">
-                    <div class="project-image">
-                        <div class="image-overlay"></div>
-                        <div class="project-icon">🎨</div>
-                    </div>
-                    <div class="project-content">
-                        <span class="project-tag">Web Application</span>
-                        <h3>Design Collaboration Tool</h3>
-                        <p>Real-time collaborative design platform with version control and team management features.</p>
-                        <div class="project-tech">
-                            <span>Next.js</span>
-                            <span>Socket.io</span>
-                            <span>PostgreSQL</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">Live Demo →</a>
-                            <a href="#" class="project-link">GitHub →</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="web">
-                    <div class="project-image">
-                        <div class="image-overlay"></div>
-                        <div class="project-icon">💼</div>
-                    </div>
-                    <div class="project-content">
-                        <span class="project-tag">SaaS Platform</span>
-                        <h3>Project Management System</h3>
-                        <p>Enterprise-grade project management tool with analytics, reporting, and team collaboration.</p>
-                        <div class="project-tech">
-                            <span>React</span>
-                            <span>Express</span>
-                            <span>MongoDB</span>
-                            <span>Redis</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">Live Demo →</a>
-                            <a href="#" class="project-link">Case Study →</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="cloud">
-                    <div class="project-image">
-                        <div class="image-overlay"></div>
-                        <div class="project-icon">🤖</div>
-                    </div>
-                    <div class="project-content">
-                        <span class="project-tag">AI Integration</span>
-                        <h3>AI-Powered Analytics</h3>
-                        <p>Machine learning platform for business intelligence and predictive analytics with cloud deployment.</p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>TensorFlow</span>
-                            <span>AWS</span>
-                            <span>FastAPI</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">Demo →</a>
-                            <a href="#" class="project-link">Docs →</a>
-                        </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">🚀</div>
+                        <h3>Business Growth</h3>
+                        <p>Scaling startups and optimizing digital operations</p>
                     </div>
                 </div>
             </div>
@@ -479,67 +142,143 @@
     <section id="experience" class="experience">
         <div class="container">
             <div class="section-header">
-                <span class="section-number">04.</span>
+                <span class="section-number">02</span>
                 <h2 class="section-title">Experience</h2>
-                <div class="title-line"></div>
             </div>
+
             <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
+                <div class="timeline-item" data-year="2018">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-year">2018 - Present</div>
+                    </div>
                     <div class="timeline-content">
-                        <span class="timeline-date">2021 - Present</span>
-                        <h3>Chief Technology Officer</h3>
+                        <div class="timeline-badge">Current</div>
+                        <h3>Founder & CEO</h3>
                         <h4>Prodizy Tech</h4>
-                        <p>Leading technical strategy and development teams. Architecting scalable solutions for enterprise clients and driving innovation in web and cloud technologies.</p>
-                        <div class="timeline-skills">
-                            <span>Leadership</span>
-                            <span>System Design</span>
-                            <span>Cloud Architecture</span>
+                        <p>Leading a digital agency focused on web development, digital marketing, and business strategy. Successfully delivered 100+ projects for clients across various industries.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Leadership</span>
+                            <span class="tag">Strategy</span>
+                            <span class="tag">Development</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
+                <div class="timeline-item" data-year="2015">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-year">2015 - 2018</div>
+                    </div>
                     <div class="timeline-content">
-                        <span class="timeline-date">2019 - 2021</span>
-                        <h3>Senior Full-Stack Developer</h3>
+                        <h3>Senior Web Developer</h3>
                         <h4>Tech Solutions Inc.</h4>
-                        <p>Developed and maintained multiple web applications. Implemented CI/CD pipelines and improved application performance by 40%.</p>
-                        <div class="timeline-skills">
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>DevOps</span>
+                        <p>Developed enterprise-level web applications and managed a team of junior developers. Implemented agile methodologies and improved development workflow efficiency by 40%.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Team Lead</span>
+                            <span class="tag">Agile</span>
+                            <span class="tag">Enterprise</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
+                <div class="timeline-item" data-year="2013">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-year">2013 - 2015</div>
+                    </div>
                     <div class="timeline-content">
-                        <span class="timeline-date">2017 - 2019</span>
-                        <h3>Frontend Developer</h3>
+                        <h3>Web Developer</h3>
                         <h4>Digital Innovations</h4>
-                        <p>Built responsive and interactive user interfaces. Collaborated with design teams to implement pixel-perfect designs.</p>
-                        <div class="timeline-skills">
-                            <span>JavaScript</span>
-                            <span>React</span>
-                            <span>CSS3</span>
+                        <p>Built responsive websites and web applications for diverse clients. Specialized in front-end development and user experience optimization.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Frontend</span>
+                            <span class="tag">UX</span>
+                            <span class="tag">Responsive</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="portfolio-gradient gradient-1"></div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <span class="project-category">E-Commerce</span>
+                                <h3>E-Commerce Platform</h3>
+                                <p>Full-stack solution for online retail</p>
+                                <div class="project-tech">
+                                    <span>React</span>
+                                    <span>Node.js</span>
+                                    <span>MongoDB</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">2016 - 2017</span>
-                        <h3>Junior Developer</h3>
-                        <h4>StartUp Labs</h4>
-                        <p>Started my professional journey building web applications and learning best practices in software development.</p>
-                        <div class="timeline-skills">
-                            <span>HTML/CSS</span>
-                            <span>JavaScript</span>
-                            <span>jQuery</span>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="portfolio-gradient gradient-2"></div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <span class="project-category">Analytics</span>
+                                <h3>Business Dashboard</h3>
+                                <p>Analytics and reporting system</p>
+                                <div class="project-tech">
+                                    <span>Vue.js</span>
+                                    <span>D3.js</span>
+                                    <span>Python</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="portfolio-gradient gradient-3"></div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <span class="project-category">Corporate</span>
+                                <h3>Corporate Website</h3>
+                                <p>Modern responsive design</p>
+                                <div class="project-tech">
+                                    <span>Next.js</span>
+                                    <span>Tailwind</span>
+                                    <span>Sanity</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="portfolio-gradient gradient-4"></div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <span class="project-category">Mobile</span>
+                                <h3>Mobile App</h3>
+                                <p>Cross-platform solution</p>
+                                <div class="project-tech">
+                                    <span>React Native</span>
+                                    <span>Firebase</span>
+                                    <span>Redux</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -551,64 +290,76 @@
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-header">
-                <span class="section-number">05.</span>
+                <span class="section-number">04</span>
                 <h2 class="section-title">Get In Touch</h2>
-                <div class="title-line"></div>
             </div>
+
             <div class="contact-content">
                 <div class="contact-info">
                     <h3>Let's Work Together</h3>
-                    <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Whether you have a question or just want to say hi, feel free to reach out!</p>
-                    <div class="contact-methods">
-                        <div class="contact-method">
-                            <div class="method-icon">📧</div>
-                            <div class="method-details">
-                                <span class="method-label">Email</span>
-                                <a href="mailto:arjun@prodizytech.com">arjun@prodizytech.com</a>
+                    <p class="contact-description">I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, feel free to reach out!</p>
+                    
+                    <div class="contact-details">
+                        <a href="/cdn-cgi/l/email-protection#deadbfb3b7ac9eaeacb1bab7a4a7aabbbdb6f0bdb1b3" class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
                             </div>
-                        </div>
-                        <div class="contact-method">
-                            <div class="method-icon">📱</div>
-                            <div class="method-details">
-                                <span class="method-label">Phone</span>
-                                <a href="tel:+1234567890">+1 (234) 567-890</a>
+                            <div>
+                                <div class="contact-label">Email</div>
+                                <div class="contact-value"><span class="__cf_email__" data-cfemail="bac9dbd7d3c8facac8d5ded3c0c3cedfd9d294d9d5d7">[email&#160;protected]</span></div>
                             </div>
-                        </div>
-                        <div class="contact-method">
-                            <div class="method-icon">📍</div>
-                            <div class="method-details">
-                                <span class="method-label">Location</span>
-                                <span>Pātan, Bagmati Province, NP</span>
-                            </div>
-                        </div>
+                        </a>
                     </div>
-                    <div class="social-links">
-                        <a href="#" class="social-link">GitHub</a>
-                        <a href="#" class="social-link">LinkedIn</a>
-                        <a href="#" class="social-link">Twitter</a>
-                        <a href="#" class="social-link">CodePen</a>
+
+                    <div class="social-links-contact">
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
                     </div>
                 </div>
-                <div class="contact-form-wrapper">
-                    <form class="contact-form">
+
+                <form id="contactForm" class="contact-form">
+                    <div class="form-row">
                         <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
                         </div>
-                        <div class="form-group">
-                            <input type="text" placeholder="Subject">
-                        </div>
-                        <div class="form-group">
-                            <textarea placeholder="Your Message" rows="6" required></textarea>
-                        </div>
-                        <button type="submit" class="submit-btn">
-                            <span>Send Message</span>
-                            <div class="btn-glow"></div>
-                        </button>
-                    </form>
-                </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell me more..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <span>Send Message</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M18 2L9 11M18 2L12 18L9 11M18 2L2 8L9 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div id="formMessage" class="form-message"></div>
+                </form>
             </div>
         </div>
     </section>
@@ -617,11 +368,19 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p class="footer-sub">© 2026 All rights reserved</p>
-                <p>Designed & Built by Arjun KC</p>
+                <div class="footer-text">
+                    <p>&copy; 2026 Samir Paudel. Crafted with passion.</p>
+                </div>
             </div>
         </div>
     </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 19V5M12 5L5 12M12 5L19 12"/>
+        </svg>
+    </button>
 
     <script src="script.js"></script>
 </body>
