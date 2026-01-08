@@ -3,6 +3,22 @@
 // ================================
 
 // ================================
+// SCROLL PROGRESS BAR
+// ================================
+
+const scrollProgress = document.querySelector('.scroll-progress');
+
+window.addEventListener('scroll', () => {
+    const windowHeight = window.innerHeight;
+    const documentHeight = document.documentElement.scrollHeight - windowHeight;
+    const scrolled = (window.pageYOffset / documentHeight) * 100;
+    
+    if (scrollProgress) {
+        scrollProgress.style.width = scrolled + '%';
+    }
+});
+
+// ================================
 // NAVIGATION
 // ================================
 
@@ -177,13 +193,25 @@ contactForm.addEventListener('submit', async (e) => {
     submitBtn.innerHTML = '<span>Sending...</span>';
     
     try {
-        // Simulate form submission (replace with actual backend call)
-        await simulateFormSubmission({
-            name,
-            email,
-            subject,
-            message
+        // Make API call to backend
+        const response = await fetch('/api/contact', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                name,
+                email,
+                subject,
+                message
+            })
         });
+        
+        const result = await response.json();
+        
+        if (!response.ok || !result.success) {
+            throw new Error(result.error || 'Failed to send message');
+        }
         
         // Show success message
         showMessage('Thank you for your message! I will get back to you soon.', 'success');
@@ -191,8 +219,8 @@ contactForm.addEventListener('submit', async (e) => {
         // Reset form
         contactForm.reset();
         
-        // Log submission (for demo purposes)
-        console.log('Form submitted successfully:', { name, email, subject, message });
+        // Log submission
+        console.log('Form submitted successfully:', result);
         
     } catch (error) {
         showMessage('Oops! Something went wrong. Please try again later.', 'error');
@@ -203,20 +231,6 @@ contactForm.addEventListener('submit', async (e) => {
         submitBtn.innerHTML = originalBtnText;
     }
 });
-
-// Simulate form submission (replace with actual API call)
-function simulateFormSubmission(data) {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            // Simulate 90% success rate
-            if (Math.random() > 0.1) {
-                resolve(data);
-            } else {
-                reject(new Error('Submission failed'));
-            }
-        }, 1500);
-    });
-}
 
 // Real-time validation for email field
 const emailInput = document.getElementById('email');
