@@ -3,123 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Samir Paudel - Founder & CEO of Prodizy Tech. 10+ years in web development, digital strategy, and business leadership. Transforming ideas into exceptional digital experiences.">
+    <meta name="description" content="Samir Paudel - Founder & CEO of Prodizy Tech. 10+ years in web development, digital strategy, and business leadership.">
     <meta name="keywords" content="web development, digital strategy, CEO, founder, full-stack developer, business leadership">
     <meta name="author" content="Samir Paudel">
     
-    <!-- Open Graph / Social Media -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Samir Paudel - Founder & CEO | Portfolio">
+    <meta property="og:title" content="Samir Paudel - Digital Architect">
     <meta property="og:description" content="Transforming ambitious ideas into exceptional digital experiences">
-    <meta property="og:image" content="images/og-preview.jpg">
     
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Samir Paudel - Founder & CEO">
-    <meta name="twitter:description" content="10+ years in web development and digital strategy">
-    
-    <title>Samir Paudel - Founder & CEO | Portfolio</title>
+    <title>Samir Paudel - Digital Architect</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    
-    <!-- Schema.org JSON-LD -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Samir Paudel",
-      "jobTitle": "Founder & CEO",
-      "worksFor": {
-        "@type": "Organization",
-        "name": "Prodizy Tech"
-      },
-      "url": "https://samirpaudel.com",
-      "sameAs": [
-        "https://linkedin.com/in/samirpaudel",
-        "https://twitter.com/samirpaudel",
-        "https://github.com/samirpaudel"
-      ]
-    }
-    </script>
 </head>
 <body>
-    <!-- Animated Background -->
-    <div class="bg-animation">
-        <div class="gradient-orb orb-1"></div>
-        <div class="gradient-orb orb-2"></div>
-        <div class="gradient-orb orb-3"></div>
+    <!-- Scan Lines Effect -->
+    <div class="scanlines"></div>
+    
+    <!-- Grid Background -->
+    <div class="grid-bg"></div>
+    
+    <!-- Cursor Trail -->
+    <canvas id="cursorCanvas"></canvas>
+    
+    <!-- Scroll Progress -->
+    <div class="scroll-progress">
+        <div class="scroll-progress-bar"></div>
     </div>
 
-    <!-- Grain Overlay -->
-    <div class="grain-overlay"></div>
-
-    <!-- Scroll Progress Bar -->
-    <div class="scroll-progress"></div>
-
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+    <nav class="nav">
+        
+        <div class="nav-links">
+            <a href="#home" class="nav-link" data-text="HOME">HOME</a>
+            <a href="#about" class="nav-link" data-text="ABOUT">ABOUT</a>
+            <a href="#skills" class="nav-link" data-text="SKILLS">SKILLS</a>
+            <a href="#work" class="nav-link" data-text="WORK">WORK</a>
+            <a href="#contact" class="nav-link" data-text="CONTACT">CONTACT</a>
         </div>
+        
+        <button class="nav-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="profile-wrapper">
-                <div class="profile-image-container">
-                    <div class="profile-ring"></div>
-                    <div class="profile-ring-2"></div>
-                    <img src="images/samir.jpeg" alt="Samir Paudel" class="profile-image" loading="eager">
+        <div class="hero-bg">
+            <div class="hero-circle circle-1"></div>
+            <div class="hero-circle circle-2"></div>
+            <div class="hero-circle circle-3"></div>
+        </div>
+        
+        <div class="container">
+
+            <div class="hero-visual">
+                <div class="hologram">
+                    <div class="hologram-ring"></div>
+                    <div class="hologram-ring"></div>
+                    <div class="hologram-ring"></div>
+                    <img src="images/samir.jpeg" alt="Samir Paudel" class="hero-image">
                 </div>
-                <div>
-                    <a href="https://prodizytech.vercel.app/team.html" class="hero-label hero-label-link">Creative Developer & Founder</a>
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    <span>AVAILABLE FOR HIRE</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="title-line">
+                        <span class="glitch-text" data-text="DIGITAL">Samir</span>
+                    </span>
+                    <span class="title-line">
+                        <span class="glitch-text" data-text="ARCHITECT">poudel</span>
+                    </span>
+                </h1>
+                
+            </div>
+            
+            <div class="hero-content">
+
+                <a href="https://prodizytech.vercel.app/team.html" target="_blank" class="terminal" rel="noopener noreferrer">
+                    <div class="terminal-header">
+                        <span class="terminal-dot"></span>
+                        <span class="terminal-dot"></span>
+                        <span class="terminal-dot"></span>
+                    </div>
+                    <div class="terminal-body">
+                        <p><span class="terminal-prompt">$</span> <span class="typing-text">who_am_i</span></p>
+                        <p class="terminal-output">Founder & CEO @ Prodizy Tech</p>
+                        <p><span class="terminal-prompt">$</span> <span class="typing-text">skills --list</span></p>
+                        <p class="terminal-output">Full-Stack Development, UI/UX Design, Digital Strategy</p>
+                        <p><span class="terminal-prompt">$</span> <span class="typing-text">click to visit →</span></p>
+                    </div>
+                </a>
+                
+                <p class="hero-description">
+                    Building the future of web experiences through innovative design 
+                    and cutting-edge development. <span class="highlight">10+ years</span> crafting 
+                    digital excellence.
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number" data-target="10">0</div>
+                        <div class="stat-label">YEARS EXP</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number" data-target="100">0</div>
+                        <div class="stat-label">PROJECTS</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number" data-target="50">0</div>
+                        <div class="stat-label">CLIENTS</div>
+                    </div>
+                </div>
+                
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">
+                        <span class="btn-text">INITIATE CONTACT</span>
+                        <span class="btn-icon">→</span>
+                    </a>
+                    <a href="#work" class="btn btn-secondary">
+                        <span class="btn-text">VIEW PORTFOLIO</span>
+                        <span class="btn-icon">↓</span>
+                    </a>
                 </div>
             </div>
             
-            <div class="hero-text">
-               
-                <h1 class="hero-title">
-                    <span class="title-line">Samir Poudel</span>
-                </h1>
-                <p class="hero-subtitle">Transforming ambitious ideas into</p>
-                <p class="hero-subtitle-accent">exceptional digital experiences</p>
-            </div>
-
-            <div class="hero-buttons">
-                <a href="#contact" class="btn btn-primary">
-                    <span>Let's Talk</span>
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <path d="M4 10H16M16 10L10 4M16 10L10 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                    </svg>
-                </a>
-                <a href="#portfolio" class="btn btn-secondary">
-                    <span>View Work</span>
-                </a>
-            </div>
-        </div>
-
-        <!-- Decorative Elements -->
-        <div class="hero-decorations">
-            <div class="deco-square deco-1"></div>
-            <div class="deco-square deco-2"></div>
-            <div class="deco-circle deco-3"></div>
         </div>
     </section>
 
@@ -127,313 +141,166 @@
     <section id="about" class="about">
         <div class="container">
             <div class="section-header">
-                <span class="section-number">01</span>
-                <h2 class="section-title">About Me</h2>
-                <p class="section-subtitle">Building digital excellence for over a decade</p>
+                <span class="section-number">[01]</span>
+                <h2 class="section-title">
+                    <span class="glitch" data-text="ABOUT ME">ABOUT ME</span>
+                </h2>
             </div>
             
-            <div class="about-content">
-                <div class="about-text">
-                    <p class="lead-text">With over 10 years of experience in web development and digital strategy, I've dedicated my career to helping businesses establish and grow their online presence.</p>
-                    <p>As the Founder and CEO of Prodizy Tech, I lead a talented team in delivering cutting-edge digital solutions. My passion lies in understanding unique business challenges and crafting tailored strategies that drive measurable results.</p>
-                    <p>I believe in the power of technology to transform businesses and create meaningful connections. Every project is an opportunity to push boundaries and deliver exceptional value.</p>
+            <div class="about-grid">
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="lead">
+                            I'm a <span class="highlight">digital architect</span> specializing in crafting 
+                            extraordinary web experiences that merge cutting-edge technology with stunning design.
+                        </p>
+                        <p>
+                            As the Founder and CEO of <span class="highlight">Prodizy Tech</span>, I've spent 
+                            over a decade transforming ideas into powerful digital realities. My approach combines 
+                            technical expertise with creative vision to deliver solutions that don't just work—they 
+                            inspire.
+                        </p>
+                        <p>
+                            Every project is an opportunity to push boundaries, challenge conventions, and create 
+                            something that stands out in the digital landscape. I believe in the power of technology 
+                            to elevate brands and create meaningful connections.
+                        </p>
+                    </div>
+                    
+                    <div class="about-skills-preview">
+                        <div class="skill-badge">Full-Stack Development</div>
+                        <div class="skill-badge">UI/UX Design</div>
+                        <div class="skill-badge">Digital Strategy</div>
+                        <div class="skill-badge">Team Leadership</div>
+                    </div>
                 </div>
                 
-                <div class="stats-grid">
-                    <div class="stat-card">
-                        <div class="stat-number">10+</div>
-                        <div class="stat-label">Years Experience</div>
+                <div class="about-cards">
+                    <div class="info-card">
+                        <div class="card-icon">🎯</div>
+                        <h3>Mission</h3>
+                        <p>Transform ambitious ideas into exceptional digital experiences that drive real business results.</p>
                     </div>
-                    <div class="stat-card">
-                        <div class="stat-number">100+</div>
-                        <div class="stat-label">Projects Delivered</div>
+                    <div class="info-card">
+                        <div class="card-icon">⚡</div>
+                        <h3>Approach</h3>
+                        <p>Blend creativity with technology, delivering solutions that are both beautiful and functional.</p>
                     </div>
-                    <div class="stat-card">
-                        <div class="stat-number">50+</div>
-                        <div class="stat-label">Happy Clients</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">15+</div>
-                        <div class="stat-label">Team Members</div>
+                    <div class="info-card">
+                        <div class="card-icon">🚀</div>
+                        <h3>Impact</h3>
+                        <p>100+ projects delivered, helping businesses establish powerful digital presence worldwide.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section (NEW) -->
+    <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
             <div class="section-header">
-                <span class="section-number">02</span>
-                <h2 class="section-title">Skills & Expertise</h2>
-                <p class="section-subtitle">Technologies and domains I specialize in</p>
+                <span class="section-number">[02]</span>
+                <h2 class="section-title">
+                    <span class="glitch" data-text="EXPERTISE">EXPERTISE</span>
+                </h2>
             </div>
-
-            <div class="skills-content">
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <div class="skill-icon">💻</div>
-                        <h3>Frontend Development</h3>
-                        <p>Creating responsive, performant user interfaces</p>
-                        <div class="skill-tags">
-                            <span class="skill-tag">React</span>
-                            <span class="skill-tag">Next.js</span>
-                            <span class="skill-tag">Vue.js</span>
-                            <span class="skill-tag">TypeScript</span>
-                            <span class="skill-tag">Tailwind CSS</span>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="category-title">FRONTEND</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">React / Next.js</span>
+                                <span class="skill-level">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="skill-card">
-                        <div class="skill-icon">⚙️</div>
-                        <h3>Backend Development</h3>
-                        <p>Building scalable server-side applications</p>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Node.js</span>
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">PostgreSQL</span>
-                            <span class="skill-tag">MongoDB</span>
-                            <span class="skill-tag">GraphQL</span>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">TypeScript</span>
+                                <span class="skill-level">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="skill-card">
-                        <div class="skill-icon">☁️</div>
-                        <h3>Cloud & DevOps</h3>
-                        <p>Deploying and managing cloud infrastructure</p>
-                        <div class="skill-tags">
-                            <span class="skill-tag">AWS</span>
-                            <span class="skill-tag">Docker</span>
-                            <span class="skill-tag">CI/CD</span>
-                            <span class="skill-tag">Kubernetes</span>
-                            <span class="skill-tag">Vercel</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-card">
-                        <div class="skill-icon">📊</div>
-                        <h3>Digital Strategy</h3>
-                        <p>Data-driven approaches to online growth</p>
-                        <div class="skill-tags">
-                            <span class="skill-tag">SEO</span>
-                            <span class="skill-tag">Analytics</span>
-                            <span class="skill-tag">Marketing</span>
-                            <span class="skill-tag">Growth</span>
-                            <span class="skill-tag">A/B Testing</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-card">
-                        <div class="skill-icon">🎯</div>
-                        <h3>Leadership</h3>
-                        <p>Building and mentoring high-performing teams</p>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Team Building</span>
-                            <span class="skill-tag">Agile</span>
-                            <span class="skill-tag">Mentoring</span>
-                            <span class="skill-tag">Strategy</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-card">
-                        <div class="skill-icon">🚀</div>
-                        <h3>Business Growth</h3>
-                        <p>Scaling startups and optimizing operations</p>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Product</span>
-                            <span class="skill-tag">Scaling</span>
-                            <span class="skill-tag">Revenue</span>
-                            <span class="skill-tag">Operations</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-number">03</span>
-                <h2 class="section-title">Experience</h2>
-                <p class="section-subtitle">My professional journey</p>
-            </div>
-
-            <div class="timeline">
-                <div class="timeline-item" data-year="2018">
-                    <div class="timeline-marker">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-year">2018 - Present</div>
-                    </div>
-                    <div class="timeline-content">
-                        <div class="timeline-badge">Current</div>
-                        <h3>Founder & CEO</h3>
-                        <h4>Prodizy Tech</h4>
-                        <p>Leading a digital agency focused on web development, digital marketing, and business strategy. Successfully delivered 100+ projects for clients across various industries.</p>
-                        <ul class="timeline-highlights">
-                            <li>Built team from 2 to 15+ talented professionals</li>
-                            <li>Achieved 300% revenue growth year-over-year</li>
-                            <li>Established partnerships with Fortune 500 companies</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item" data-year="2015">
-                    <div class="timeline-marker">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-year">2015 - 2018</div>
-                    </div>
-                    <div class="timeline-content">
-                        <h3>Senior Full Stack Developer</h3>
-                        <h4>Tech Solutions Inc.</h4>
-                        <p>Led development of enterprise-level web applications serving millions of users. Architected scalable solutions and mentored junior developers.</p>
-                        <ul class="timeline-highlights">
-                            <li>Reduced application load time by 60%</li>
-                            <li>Mentored 10+ junior developers</li>
-                            <li>Implemented CI/CD pipelines</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item" data-year="2013">
-                    <div class="timeline-marker">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-year">2013 - 2015</div>
-                    </div>
-                    <div class="timeline-content">
-                        <h3>Web Developer</h3>
-                        <h4>Digital Innovations</h4>
-                        <p>Developed responsive websites and web applications. Collaborated with design and marketing teams to deliver client projects.</p>
-                        <ul class="timeline-highlights">
-                            <li>Delivered 50+ client projects</li>
-                            <li>Improved team workflow efficiency by 40%</li>
-                            <li>Received "Developer of the Year" award</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-number">04</span>
-                <h2 class="section-title">Featured Work</h2>
-                <p class="section-subtitle">Selected projects that showcase my expertise</p>
-            </div>
-
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <div class="portfolio-image">
-                        <div class="portfolio-gradient gradient-1"></div>
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-info">
-                                <span class="project-category">E-Commerce</span>
-                                <h3>E-Commerce Platform</h3>
-                                <p>Full-featured online shopping experience</p>
-                                <div class="project-tech">
-                                    <span>React</span>
-                                    <span>Node.js</span>
-                                    <span>Stripe</span>
-                                </div>
-                                <div class="project-stats">
-                                    <div class="stat-item">
-                                        <span class="stat-icon">👥</span>
-                                        <span>50K+ Users</span>
-                                    </div>
-                                    <div class="stat-item">
-                                        <span class="stat-icon">💰</span>
-                                        <span>$2M Revenue</span>
-                                    </div>
-                                </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">CSS / Tailwind</span>
+                                <span class="skill-level">98%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="98"></div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="portfolio-item">
-                    <div class="portfolio-image">
-                        <div class="portfolio-gradient gradient-2"></div>
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-info">
-                                <span class="project-category">Analytics</span>
-                                <h3>Business Dashboard</h3>
-                                <p>Real-time analytics and reporting system</p>
-                                <div class="project-tech">
-                                    <span>Vue.js</span>
-                                    <span>D3.js</span>
-                                    <span>Python</span>
-                                </div>
-                                <div class="project-stats">
-                                    <div class="stat-item">
-                                        <span class="stat-icon">📊</span>
-                                        <span>1M+ Data Points</span>
-                                    </div>
-                                    <div class="stat-item">
-                                        <span class="stat-icon">⚡</span>
-                                        <span>Real-time Updates</span>
-                                    </div>
-                                </div>
+                
+                <div class="skill-category">
+                    <h3 class="category-title">BACKEND</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Node.js / Express</span>
+                                <span class="skill-level">92%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="92"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python / Django</span>
+                                <span class="skill-level">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">PostgreSQL / MongoDB</span>
+                                <span class="skill-level">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88"></div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="portfolio-item">
-                    <div class="portfolio-image">
-                        <div class="portfolio-gradient gradient-3"></div>
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-info">
-                                <span class="project-category">Corporate</span>
-                                <h3>Corporate Website</h3>
-                                <p>Modern responsive enterprise website</p>
-                                <div class="project-tech">
-                                    <span>Next.js</span>
-                                    <span>Tailwind</span>
-                                    <span>Sanity</span>
-                                </div>
-                                <div class="project-stats">
-                                    <div class="stat-item">
-                                        <span class="stat-icon">🚀</span>
-                                        <span>98 Lighthouse</span>
-                                    </div>
-                                    <div class="stat-item">
-                                        <span class="stat-icon">🌍</span>
-                                        <span>Global Reach</span>
-                                    </div>
-                                </div>
+                
+                <div class="skill-category">
+                    <h3 class="category-title">DESIGN</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">UI/UX Design</span>
+                                <span class="skill-level">94%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="94"></div>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-                <div class="portfolio-item">
-                    <div class="portfolio-image">
-                        <div class="portfolio-gradient gradient-4"></div>
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-info">
-                                <span class="project-category">Mobile</span>
-                                <h3>Mobile App</h3>
-                                <p>Cross-platform mobile solution</p>
-                                <div class="project-tech">
-                                    <span>React Native</span>
-                                    <span>Firebase</span>
-                                    <span>Redux</span>
-                                </div>
-                                <div class="project-stats">
-                                    <div class="stat-item">
-                                        <span class="stat-icon">⭐</span>
-                                        <span>4.8 Rating</span>
-                                    </div>
-                                    <div class="stat-item">
-                                        <span class="stat-icon">📱</span>
-                                        <span>100K+ Downloads</span>
-                                    </div>
-                                </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Figma / Adobe XD</span>
+                                <span class="skill-level">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Motion Design</span>
+                                <span class="skill-level">87%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="87"></div>
                             </div>
                         </div>
                     </div>
@@ -442,66 +309,81 @@
         </div>
     </section>
 
-    <!-- Testimonials Section (NEW) -->
-    <section id="testimonials" class="testimonials">
+    <!-- Work Section -->
+    <section id="work" class="work">
         <div class="container">
             <div class="section-header">
-                <span class="section-number">05</span>
-                <h2 class="section-title">Client Testimonials</h2>
-                <p class="section-subtitle">What clients say about working with me</p>
+                <span class="section-number">[03]</span>
+                <h2 class="section-title">
+                    <span class="glitch" data-text="FEATURED WORK">FEATURED WORK</span>
+                </h2>
             </div>
-
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-rating">
-                        <span class="star">⭐</span>
-                        <span class="star">⭐</span>
-                        <span class="star">⭐</span>
-                        <span class="star">⭐</span>
-                        <span class="star">⭐</span>
+            
+            <div class="work-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <span class="project-tag">E-COMMERCE</span>
+                        </div>
                     </div>
-                    <p class="testimonial-text">"Samir transformed our digital presence completely. His strategic approach and technical expertise helped us increase our online revenue by 250%. Outstanding professional!"</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">JD</div>
-                        <div class="author-info">
-                            <div class="author-name">John Doe</div>
-                            <div class="author-role">CEO, Tech Startup Inc.</div>
+                    <div class="project-info">
+                        <h3 class="project-title">NexGen Store</h3>
+                        <p class="project-desc">Full-stack e-commerce platform with AI-powered recommendations</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>PostgreSQL</span>
                         </div>
                     </div>
                 </div>
-
-                <div class="testimonial-card">
-                    <div class="testimonial-rating">
-                        <span class="star">⭐</span>
-                        <span class="star">⭐</span>
-                        <span class="star">⭐</span>
-                        <span class="star">⭐</span>
-                        <span class="star">⭐</span>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <span class="project-tag">FINTECH</span>
+                        </div>
                     </div>
-                    <p class="testimonial-text">"Working with Samir was a game-changer. He not only delivered exceptional code but also provided valuable business insights. Highly recommended!"</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">SJ</div>
-                        <div class="author-info">
-                            <div class="author-name">Sarah Johnson</div>
-                            <div class="author-role">Founder, E-Commerce Biz</div>
+                    <div class="project-info">
+                        <h3 class="project-title">PayFlow Dashboard</h3>
+                        <p class="project-desc">Real-time analytics dashboard for payment processing</p>
+                        <div class="project-tech">
+                            <span>Next.js</span>
+                            <span>TypeScript</span>
+                            <span>GraphQL</span>
                         </div>
                     </div>
                 </div>
-
-                <div class="testimonial-card">
-                    <div class="testimonial-rating">
-                        <span class="star">⭐</span>
-                        <span class="star">⭐</span>
-                        <span class="star">⭐</span>
-                        <span class="star">⭐</span>
-                        <span class="star">⭐</span>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <span class="project-tag">SAAS</span>
+                        </div>
                     </div>
-                    <p class="testimonial-text">"Exceptional attention to detail and commitment to excellence. Samir's team delivered our project ahead of schedule and exceeded all expectations."</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">MC</div>
-                        <div class="author-info">
-                            <div class="author-name">Michael Chen</div>
-                            <div class="author-role">CTO, Global Corp</div>
+                    <div class="project-info">
+                        <h3 class="project-title">CloudSync Pro</h3>
+                        <p class="project-desc">Enterprise collaboration platform with real-time sync</p>
+                        <div class="project-tech">
+                            <span>Vue.js</span>
+                            <span>Python</span>
+                            <span>Redis</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <span class="project-tag">PORTFOLIO</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Creative Studio</h3>
+                        <p class="project-desc">Award-winning portfolio site for design agency</p>
+                        <div class="project-tech">
+                            <span>Webflow</span>
+                            <span>GSAP</span>
+                            <span>Three.js</span>
                         </div>
                     </div>
                 </div>
@@ -513,100 +395,72 @@
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-header">
-                <span class="section-number">06</span>
-                <h2 class="section-title">Get In Touch</h2>
-                <p class="section-subtitle">Let's create something amazing together</p>
+                <span class="section-number">[04]</span>
+                <h2 class="section-title">
+                    <span class="glitch" data-text="GET IN TOUCH">GET IN TOUCH</span>
+                </h2>
             </div>
-
-            <div class="contact-content">
+            
+            <div class="contact-grid">
                 <div class="contact-info">
-                    <h3>Let's Work Together</h3>
-                    <p class="contact-description">I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, feel free to reach out!</p>
+                    <p class="contact-lead">
+                        Ready to build something extraordinary? Let's talk about your next project.
+                    </p>
                     
                     <div class="contact-details">
-                        <a href="mailto:arjunkc2026@gmail.com" class="contact-item">
-                            <div class="contact-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                    <polyline points="22,6 12,13 2,6"></polyline>
-                                </svg>
-                            </div>
-                            <div>
-                                <div class="contact-label">Email</div>
-                                <div class="contact-value">samirxyz@gmail.com</div>
-                            </div>
-                        </a>
-
                         <div class="contact-item">
-                            <div class="contact-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                    <circle cx="12" cy="10" r="3"></circle>
-                                </svg>
-                            </div>
-                            <div>
-                                <div class="contact-label">Location</div>
-                                <div class="contact-value">Kathmandu, Nepal</div>
-                            </div>
+                            <div class="contact-label">EMAIL</div>
+                            <a href="mailto:samirxyz@gmail.com" class="contact-value">samirxyz@gmail.com</a>
                         </div>
-
                         <div class="contact-item">
-                            <div class="contact-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-                                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-                                </svg>
-                            </div>
-                            <div>
-                                <div class="contact-label">Availability</div>
-                                <div class="contact-value">Open for opportunities</div>
-                            </div>
+                            <div class="contact-label">LOCATION</div>
+                            <div class="contact-value">Kathmandu, Nepal</div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-label">COMPANY</div>
+                            <a href="https://prodizytech.vercel.app" target="_blank" class="contact-value">Prodizy Tech</a>
                         </div>
                     </div>
-
-                    <div class="social-links-contact">
-                        <a href="https://linkedin.com/in/samirpaudel" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                            </svg>
-                        </a>
-                        <a href="https://twitter.com/samirpaudel" class="social-link" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                            </svg>
-                        </a>
-                        <a href="https://github.com/samirpaudel" class="social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                    
+                    <div class="social-links">
+                        <a href="https://github.com/samirpaudel" target="_blank" class="social-link" aria-label="GitHub">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                             </svg>
                         </a>
+                        <a href="https://linkedin.com/in/samirpaudel" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com/samirpaudel" target="_blank" class="social-link" aria-label="Twitter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                            </svg>
+                        </a>
                     </div>
                 </div>
-
-                <form id="contactForm" class="contact-form">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="name">Name *</label>
-                            <input type="text" id="name" name="name" placeholder="Your name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email *</label>
-                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
-                        </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">NAME</label>
+                        <input type="text" id="name" name="name" required>
                     </div>
                     <div class="form-group">
-                        <label for="subject">Subject *</label>
-                        <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email" required>
                     </div>
                     <div class="form-group">
-                        <label for="message">Message *</label>
-                        <textarea id="message" name="message" rows="5" placeholder="Tell me more about your project..." required></textarea>
+                        <label for="subject">SUBJECT</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">MESSAGE</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary btn-full">
-                        <span>Send Message</span>
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <path d="M18 2L9 11M18 2L12 18L9 11M18 2L2 8L9 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
+                        <span class="btn-text">SEND MESSAGE</span>
+                        <span class="btn-icon">→</span>
                     </button>
                     <div id="formMessage" class="form-message"></div>
                 </form>
@@ -618,39 +472,30 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-main">
-                    <div class="footer-brand">
-                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Samir Paudel</h3>
-                        <p>Transforming ideas into exceptional digital experiences</p>
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="glitch" data-text="SAMIR">SAMIR</span>
+                        <span>PAUDEL</span>
                     </div>
-                    <div class="footer-links">
-                        <div class="footer-column">
-                            <h4>Quick Links</h4>
-                            <ul>
-                                <li><a href="#about">About</a></li>
-                                <li><a href="#skills">Skills</a></li>
-                                <li><a href="#portfolio">Portfolio</a></li>
-                                <li><a href="#contact">Contact</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer-column">
-                            <h4>Connect</h4>
-                            <ul>
-                                <li><a href="https://linkedin.com/in/samirpaudel" target="_blank" rel="noopener">LinkedIn</a></li>
-                                <li><a href="https://twitter.com/samirpaudel" target="_blank" rel="noopener">Twitter</a></li>
-                                <li><a href="https://github.com/samirpaudel" target="_blank" rel="noopener">GitHub</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                    <p class="footer-tagline">Digital Architect • Founder • CEO</p>
                 </div>
+                
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#work">Work</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                
                 <div class="footer-bottom">
-                    <p>&copy; 2026 Samir Paudel. All rights reserved. Crafted with passion and precision.</p>
+                    <p>&copy; 2026 Samir Paudel. All rights reserved.</p>
+                    <p class="footer-credit">Designed & Developed with <span class="heart">♥</span> in Nepal</p>
                 </div>
             </div>
         </div>
     </footer>
 
-  </body>
+    <script src="script.js"></script>
+</body>
 </html>
-
-   
