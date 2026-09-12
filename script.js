@@ -3,6 +3,23 @@
 // ================================
 
 // ================================
+// PRELOADER
+// ================================
+
+document.body.classList.add('no-scroll');
+
+window.addEventListener('load', () => {
+    const preloader = document.getElementById('preloader');
+    setTimeout(() => {
+        if (preloader) {
+            preloader.classList.add('loaded');
+            document.body.classList.remove('no-scroll');
+            setTimeout(() => preloader.remove(), 600);
+        }
+    }, 2000);
+});
+
+// ================================
 // CURSOR TRAIL EFFECT
 // ================================
 
